@@ -30,7 +30,7 @@
         <race>
             <leatherDef>Leather_Human</leatherDef>
             <body>Alien_BunTribe</body>
-            <!--<baseBodySize>0.85</baseBodySize>-->
+            <baseBodySize>0.85</baseBodySize>
             <baseHealthScale>0.85</baseHealthScale>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
@@ -110,7 +110,7 @@
             <li>InstallBionicHeart</li>
             <li>InstallBionicStomach</li>
             <li>InstallBionicEar</li>
-            <!--<li>RB_InstallBionicTail</li>-->
+            <li>InstallBun_ProstheticTail</li>
             <li>InstallSimpleProstheticArm</li>
             <li>InstallSimpleProstheticLeg</li>
             <li>InstallSimpleProstheticHeart</li>

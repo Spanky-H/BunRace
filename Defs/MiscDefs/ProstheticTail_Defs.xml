@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+        
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Bun_ProstheticTail</defName>
+        <label>prosthetic bun tail</label>
+        <labelNoun>a prosthetic bun tail</labelNoun>
+        <description>An installed prosthetic bun tail.</description>
+        <descriptionHyperlinks><ThingDef>Bun_ProstheticTail</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>Bun_ProstheticTail</spawnThingOnRemoved>
+        <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.0</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartProstheticMakeableBase">
+        <defName>Bun_ProstheticTail</defName>
+        <label>prosthetic bun tail</label>
+        <description>A tail prosthesis. While it lacks a neural interface or any particularly complex mechanisms, bun tails are largely ornamental and this one does the job just fine.</description>
+        <descriptionHyperlinks><RecipeDef>InstallBun_ProstheticTail</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <cloth>20</cloth>
+            <Steel>10</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>5</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>InstallBun_ProstheticTail</defName>
+        <label>install prosthetic bun tail</label>
+        <description>Install a prosthetic bun tail.</description>
+        <descriptionHyperlinks><ThingDef>Bun_ProstheticTail</ThingDef></descriptionHyperlinks>
+        <jobString>Installing prosthetic bun tail.</jobString>
+        <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Bun_ProstheticTail</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Bun_ProstheticTail</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>BunTail</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Bun_ProstheticTail</addsHediff>
+    </RecipeDef>
+</Defs>
