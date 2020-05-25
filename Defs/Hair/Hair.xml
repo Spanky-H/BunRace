@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HairDef>
+		<label>Braided 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_braid_1</texPath>
+		<defName>BunBraid1</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Braided 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_braid_2</texPath>
+		<defName>BunBraid2</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Drill 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_drill_1</texPath>
+		<defName>BunDrill1</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Drill 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_drill_2</texPath>
+		<defName>BunDrill2</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+  	</HairDef>
+	<HairDef>
+		<label>Long 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_long_1</texPath>
+		<defName>BunLong1</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Long 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_long_2</texPath>
+		<defName>BunLong2</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Long 3</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_long_3</texPath>
+		<defName>BunLong3</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+  	</HairDef>
+	  <HairDef>
+		<label>Mid-length 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_mid_1</texPath>
+		<defName>BunMid1</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Mid-length 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_mid_2</texPath>
+		<defName>BunMid2</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Ponytail 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_pony_1</texPath>
+		<defName>BunPony1</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Ponytail 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_pony_2</texPath>
+		<defName>BunPony2</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Short 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_short_1</texPath>
+		<defName>BunShort1</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Short 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_short_2</texPath>
+		<defName>BunShort2</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Short 3</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_short_3</texPath>
+		<defName>BunShort3</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Twin-Tail 1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_twin_1</texPath>
+		<defName>BunTwin1</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Twin-Tail 2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_twin_2</texPath>
+		<defName>BunTwin2</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Twin-Tail 3</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_twin_3</texPath>
+		<defName>BunTwin3</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
+		<label>Twin-Tail 4</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_twin_4</texPath>
+		<defName>BunTwin4</defName>
+		<hairTags>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+</Defs>

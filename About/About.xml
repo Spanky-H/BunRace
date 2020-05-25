@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Bun Race</name>
+	<author>Knarfy</author>
+	<url>none presently</url>
+	<supportedVersions>
+			<li>1.1</li>
+	</supportedVersions>
+	<packageId>Knarfy.BunRace.core</packageId>
+	
+	<modDependencies>
+      <li>
+        <packageId>erdelf.HumanoidAlienRaces</packageId>
+        <displayName>Humanoid Alien Races 2.0</displayName>
+        <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+      </li>
+    </modDependencies>
+	
+	<description>Adds the Bun race to Rimworld. Buns come in both tribal and advanced flavors. Buns are smaller and weaker than humans, but have powerful legs that make them blazingly fast and allow for dangerous kicks.
+
+- Buns are roughly 15% smaller than humans
+  - They eat a bit less (0.85 hunger rate)
+  - They carry less (65 carrying capacity)
+  - They're slightly less resistant to cold (Min comfy temp 18)
+  - It takes them longer to do things (0.85 global workspeed)
+- Buns are cute and fluffy. (1 natural beauty)
+- Buns are panicky and somewhat neurotic. (Mental break threshold 0.4)
+- Buns are *blazingly* fast. (Move speed 6.5)
+	
+Dependencies:
+	- Humanoid Alien Races 2.0
+
+Credits and thanks:
+- erdelf for the Humanoid Alien Framework
+- ireth92 for the use of their Beutiful Bodies body texture as a resource
+- Gloomylynx for the use of their wonderful gloomy hair and face textures as resources
+- Everyone on the Rimworld Alien Races discord for their help, especially gouda quiche and Roskii
+</description>
+<loadAfter>
+	<li>Ludeon.RimWorld</li>
+	<li>Ludeon.RimWorld.Royalty</li>
+	<li>erdelf.HumanoidAlienRaces</li>
+</loadAfter>
+</ModMetaData>

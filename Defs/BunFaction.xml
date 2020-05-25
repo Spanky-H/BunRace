@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--Player Factions-->
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>PlayerBunColony</defName>
+        <label>New Bun Arrivals</label>
+        <description>A colony of recently-arrived off-world Buns.</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>Bunlander</basicMemberKind>
+        <pawnSingular>bun</pawnSingular>
+        <pawnsPlural>buns</pawnsPlural>
+        <techLevel>Industrial</techLevel>
+        <backstoryFilters>
+          <li>
+            <categories>
+              <li>Offworld</li>
+            </categories>
+          </li>
+        </backstoryFilters>
+        <factionIconPath>World/WorldObjects/Expanding/BunTown</factionIconPath>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+        <startingResearchTags>
+          <li>ClassicStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+          <li>ClassicStart</li>
+          <li>ClassicStartTechprints</li>
+        </startingTechprintsResearchTags>
+        <hairTags>
+          <li>UrbanBun</li>
+        </hairTags>
+        <apparelStuffFilter>
+          <thingDefs>
+            <li>Synthread</li>
+          </thingDefs>
+        </apparelStuffFilter>
+    </FactionDef>
+
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>PlayerBunTribe</defName>
+        <label>New Bun Tribe</label>
+        <description>A small tribe of buns.</description>
+        <isPlayer>true</isPlayer>
+        <pawnSingular>bun</pawnSingular>
+        <pawnsPlural>buns</pawnsPlural>
+        <basicMemberKind>Bun</basicMemberKind>
+        <techLevel>Neolithic</techLevel>
+        <backstoryFilters>
+            <li>
+                <categories>
+                <li>Tribal</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>World/WorldObjects/Expanding/BunVillage</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+        <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionTribal</factionNameMaker>
+        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+        <forageabilityFactor>1.7</forageabilityFactor>
+        <startingResearchTags>
+            <li>TribalStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>TribalStart</li>
+            <li>TribalStartTechprints</li>
+        </startingTechprintsResearchTags>
+        <hairTags>
+            <li>TribalBun</li>
+        </hairTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <recipePrerequisiteTags>
+            <li>Tribal</li>
+        </recipePrerequisiteTags>
+    </FactionDef>
+    <!--NPC Factions-->
+    <!--NPC Tribal-->
+    <FactionDef ParentName="HumanFactionBase" Name="BunTribeBase" Abstract="True">
+        <pawnSingular>bun</pawnSingular>
+        <pawnsPlural>buns</pawnsPlural>
+        <categoryTag>Tribal</categoryTag>
+        <listOrderPriority>20</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canStageAttacks>true</canStageAttacks>
+        <factionIconPath>World/WorldObjects/Expanding/BunVillage</factionIconPath>
+        <geneticVariance>0.1</geneticVariance>
+        <factionNameMaker>NamerFactionTribal</factionNameMaker>
+        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+        <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+        <techLevel>Neolithic</techLevel>
+        <backstoryFilters>
+          <li>
+            <categories>
+              <li>Tribal</li>
+            </categories>
+          </li>
+        </backstoryFilters>
+        <leaderTitle>chief</leaderTitle>
+        <hairTags>
+          <li>TribalBun</li>
+        </hairTags>
+        <caravanTraderKinds>
+          <li>Caravan_Neolithic_BulkGoods</li>
+          <li>Caravan_Neolithic_WarMerchant</li>
+          <li>Caravan_Neolithic_ShamanMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+          <li>Visitor_Neolithic_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+          <li>Base_Neolithic_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-38~45</allowedArrivalTemperatureRange>
+        <raidCommonalityFromPointsCurve>
+          <points>
+            <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+          </points>
+        </raidCommonalityFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+          <points>
+            <li>(0,35)</li>
+            <li>(70, 50)</li>
+            <li>(800, 100)</li>
+            <li>(1300, 150)</li>
+            <li>(100000, 10000)</li>
+          </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+          <li>
+            <!-- Normal fights, ranged with melee mix-ins -->
+            <kindDef>Combat</kindDef>
+            <commonality>100</commonality>
+            <options>
+              <Bun_Tribal_Penitent>5</Bun_Tribal_Penitent>
+              <Bun_Tribal_Warrior>2</Bun_Tribal_Warrior>
+              <Bun_Tribal_Archer>13</Bun_Tribal_Archer>
+              <Bun_Tribal_Hunter>10</Bun_Tribal_Hunter>
+              <Bun_Tribal_HeavyArcher>10</Bun_Tribal_HeavyArcher>
+              <Bun_Tribal_Berserker>3</Bun_Tribal_Berserker>
+              <Bun_Tribal_ChiefRanged>3</Bun_Tribal_ChiefRanged>
+              <Bun_Tribal_ChiefMelee>1</Bun_Tribal_ChiefMelee>
+            </options>
+          </li>
+          <li>
+            <!-- Normal fights, ranged only -->
+            <kindDef>Combat</kindDef>
+            <commonality>60</commonality>
+            <options>
+              <Bun_Tribal_Archer>10</Bun_Tribal_Archer>
+              <Bun_Tribal_Hunter>10</Bun_Tribal_Hunter>
+              <Bun_Tribal_HeavyArcher>10</Bun_Tribal_HeavyArcher>
+              <Bun_Tribal_ChiefRanged>5</Bun_Tribal_ChiefRanged>
+            </options>
+          </li>
+          <li>
+            <!-- Peaceful -->
+            <kindDef>Peaceful</kindDef>
+            <options>
+              <Bun_Tribal_Warrior>10</Bun_Tribal_Warrior>
+              <Bun_Tribal_Archer>20</Bun_Tribal_Archer>
+              <Bun_Tribal_Hunter>10</Bun_Tribal_Hunter>
+              <Bun_Tribal_HeavyArcher>10</Bun_Tribal_HeavyArcher>
+              <Bun_Tribal_Berserker>3</Bun_Tribal_Berserker>
+              <Bun_Tribal_ChiefRanged>3</Bun_Tribal_ChiefRanged>
+              <Bun_Tribal_ChiefMelee>1</Bun_Tribal_ChiefMelee>
+            </options>
+          </li>
+          <li>
+            <kindDef>Trader</kindDef>
+            <traders>
+              <Bun_Tribal_Trader>1</Bun_Tribal_Trader>
+            </traders>
+            <carriers>
+              <Cynobun>6</Cynobun>
+            </carriers>
+            <guards>
+              <Bun_Tribal_Warrior>3</Bun_Tribal_Warrior>
+              <Bun_Tribal_Archer>14</Bun_Tribal_Archer>
+              <Bun_Tribal_Hunter>10</Bun_Tribal_Hunter>
+              <Bun_Tribal_HeavyArcher>14</Bun_Tribal_HeavyArcher>
+              <Bun_Tribal_Berserker>3</Bun_Tribal_Berserker>
+            </guards>
+          </li>
+          <li>
+            <kindDef>Settlement</kindDef>
+            <options>
+              <Bun_Tribal_Warrior>3</Bun_Tribal_Warrior>
+              <Bun_Tribal_Archer>14</Bun_Tribal_Archer>
+              <Bun_Tribal_Hunter>10</Bun_Tribal_Hunter>
+              <Bun_Tribal_HeavyArcher>14</Bun_Tribal_HeavyArcher>
+              <Bun_Tribal_Berserker>3</Bun_Tribal_Berserker>
+              <Bun_Tribal_ChiefRanged>10</Bun_Tribal_ChiefRanged>
+            </options>
+          </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/BunTribalSettlement</settlementTexturePath>
+      </FactionDef>
+    
+      <FactionDef ParentName="BunTribeBase">
+        <defName>BunTribeCivil</defName>
+        <label>gentle bun tribe</label>
+        <description>These buns have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, they are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, they can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThese particular buns pursue a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+        <colorSpectrum>
+          <li>(0.85, 0.75, 0.37)</li>
+          <li>(0.95, 0.95, 0.37)</li>
+        </colorSpectrum>
+        <startingGoodwill>0</startingGoodwill>
+        <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+      </FactionDef>
+    
+      <FactionDef ParentName="BunTribeBase">
+        <defName>BunTribeRough</defName>
+        <label>fierce bun tribe</label>
+        <description>These buns have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, they are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, they can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThese particular buns value warlike dominance; it may be difficult to turn them into an ally.</description>
+        <colorSpectrum>
+          <li>(0.25, 0.65, 0.05)</li>
+          <li>(0.25, 0.75, 0.05)</li>
+        </colorSpectrum>
+        <factionIconPath>World/WorldObjects/Expanding/BunVillageRough</factionIconPath>
+        <startingGoodwill>-80</startingGoodwill>
+        <naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
+      </FactionDef>
+    
+      <FactionDef ParentName="BunTribeBase">
+        <defName>BunTribeSavage</defName>
+        <label>savage bun tribe</label>
+        <description>These buns have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, they are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, they can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThese particular buns are driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+        <colorSpectrum>
+          <li>(0.85, 0, 0)</li>
+          <li>(1, 0.1, 0.1)</li>
+        </colorSpectrum>
+        <factionIconPath>World/WorldObjects/Expanding/BunVillageSavage</factionIconPath>
+        <permanentEnemy>true</permanentEnemy>
+        <goodwillDailyGain>0</goodwillDailyGain><!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
+        <goodwillDailyFall>0</goodwillDailyFall>
+      </FactionDef>
+    
+      <!--NPC Urban-->
+      <FactionDef ParentName="HumanFactionBase" Name="BunlanderFactionBase" Abstract="True">
+        <pawnSingular>bun</pawnSingular>
+        <pawnsPlural>buns</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <listOrderPriority>30</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>prime councilor</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/BunTown</factionIconPath>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <techLevel>Industrial</techLevel>
+        <backstoryFilters>
+          <li>
+            <categories>
+              <li>Outlander</li>
+            </categories>
+            <commonality>0.95</commonality>
+          </li>
+          <li>
+            <categories>
+              <li>Offworld</li>
+            </categories>
+            <commonality>0.05</commonality>
+          </li>
+        </backstoryFilters>
+        <geneticVariance>0.8</geneticVariance>
+        <hairTags>
+          <li>UrbanBun</li>
+        </hairTags>
+        <caravanTraderKinds>
+          <li>Caravan_Outlander_BulkGoods</li>
+          <li>Caravan_Outlander_CombatSupplier</li>
+          <li>Caravan_Outlander_Exotic</li>
+          <li>Caravan_Outlander_PirateMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+          <li>Visitor_Outlander_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+          <li>Base_Outlander_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+          <points>
+            <li>(0,35)</li>
+            <li>(70, 50)</li>
+            <li>(700, 100)</li>
+            <li>(1300, 150)</li>
+            <li>(100000, 10000)</li>
+          </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+          <li>
+            <!-- Normal fights, standard mix -->
+            <kindDef>Combat</kindDef>
+            <options>
+              <Bun_Villager>5</Bun_Villager>
+              <Bun_Town_Guard>10</Bun_Town_Guard>
+              <Bun_Grenadier_Destructive>1.5</Bun_Grenadier_Destructive>
+              <Bun_Mercenary_Slasher>7</Bun_Mercenary_Slasher>
+              <Bun_Mercenary_Gunner>10</Bun_Mercenary_Gunner>
+              <Bun_Mercenary_Elite>10</Bun_Mercenary_Elite>
+              <Bun_Town_Councilman>10</Bun_Town_Councilman>
+            </options>
+          </li>
+          <li>
+            <kindDef>Peaceful</kindDef>
+            <options>
+              <Bun_Villager>20</Bun_Villager>
+              <Bun_Town_Guard>10</Bun_Town_Guard>
+              <Bun_Town_Councilman>10</Bun_Town_Councilman>
+            </options>
+          </li>
+          <li>
+            <kindDef>Trader</kindDef>
+            <traders>
+              <Bun_Town_Trader>1</Bun_Town_Trader>
+            </traders>
+            <carriers>
+                <Cynobun>6</Cynobun>
+            </carriers>
+            <guards>
+              <Bun_Villager>3</Bun_Villager>
+              <Bun_Town_Guard>10</Bun_Town_Guard>
+              <Bun_Grenadier_Destructive>1.5</Bun_Grenadier_Destructive>
+              <Bun_Mercenary_Slasher>7</Bun_Mercenary_Slasher>
+              <Bun_Mercenary_Gunner>10</Bun_Mercenary_Gunner>
+              <Bun_Mercenary_Elite>10</Bun_Mercenary_Elite>
+            </guards>
+          </li>
+          <li>
+            <kindDef>Settlement</kindDef>
+            <options>
+              <Bun_Villager>10</Bun_Villager>
+              <Bun_Town_Guard>10</Bun_Town_Guard>
+              <Bun_Grenadier_Destructive>1.5</Bun_Grenadier_Destructive>
+              <Bun_Mercenary_Slasher>7</Bun_Mercenary_Slasher>
+              <Bun_Mercenary_Gunner>10</Bun_Mercenary_Gunner>
+              <Bun_Mercenary_Elite>10</Bun_Mercenary_Elite>
+              <Bun_Town_Councilman>10</Bun_Town_Councilman>
+            </options>
+          </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/BunDefaultSettlement</settlementTexturePath>
+      </FactionDef>
+    
+      <FactionDef ParentName="BunlanderFactionBase">
+        <defName>BunlanderCivil</defName>
+        <label>civil bunlander union</label>
+        <description>These buns have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThese particular buns hold civil behavior in high regard.</description>
+        <colorSpectrum>
+          <li>(0.35, 0.30, 0.60)</li>
+          <li>(0.45, 0.40, 0.90)</li>
+        </colorSpectrum>
+        <startingGoodwill>0</startingGoodwill>
+        <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+      </FactionDef>
+    
+      <FactionDef ParentName="BunlanderFactionBase">
+        <defName>BunlanderRough</defName>
+        <label>rough bunlander union</label>
+        <description>These buns have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThese particular buns have a streak of barbarity in them.</description>
+        <colorSpectrum>
+          <li>(0.00, 0.30, 0.70)</li>
+          <li>(0.00, 0.40, 1.00)</li>
+        </colorSpectrum>
+        <factionIconPath>World/WorldObjects/Expanding/BunTownRough</factionIconPath>
+        <startingGoodwill>-80</startingGoodwill>
+        <naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
+      </FactionDef>
+</Defs>
