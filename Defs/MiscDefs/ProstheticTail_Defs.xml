@@ -20,7 +20,7 @@
         <description>A tail prosthesis. While it lacks a neural interface or any particularly complex mechanisms, bun tails are largely ornamental and this one does the job just fine.</description>
         <descriptionHyperlinks><RecipeDef>InstallBun_ProstheticTail</RecipeDef></descriptionHyperlinks>
         <costList>
-            <cloth>20</cloth>
+            <Cloth>20</Cloth>
             <Steel>10</Steel>
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>

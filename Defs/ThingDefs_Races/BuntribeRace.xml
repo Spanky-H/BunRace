@@ -518,10 +518,10 @@
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
-                <hairTags>
+                <!--<hairTags>
                     <li>TribalBun</li>
                     <li>UrbanBun</li>
-                </hairTags>
+                </hairTags>-->
             </hairSettings>
             
             <!--<pawnKindSettings>
