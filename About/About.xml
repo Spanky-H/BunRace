@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Bun Race</name>
-	<author>Knarfy</author>
-	<url>none presently</url>
+	<author>Spanky_H</author>
+	<url>https://github.com/Spanky-H/BunRace</url>
 	<supportedVersions>
 			<li>1.1</li>
 	</supportedVersions>
-	<packageId>Knarfy.BunRace.core</packageId>
+	<packageId>SpankyH.BunRace.core</packageId>
 	
 	<modDependencies>
       <li>
