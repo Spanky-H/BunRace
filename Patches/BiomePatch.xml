@@ -7,48 +7,80 @@
                 <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
                 <value>
                     <Cynobun>.1</Cynobun>
+                    <CynobunHirsutus>.2</CynobunHirsutus>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="BorealForest"]/allowedPackAnimals</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
                 <value>
                     <Cynobun>.2</Cynobun>
+                    <CynobunHirsutus>.4</CynobunHirsutus>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="Tundra"]/allowedPackAnimals</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="ColdBog"]/wildAnimals</xpath>
                 <value>
                     <Cynobun>.1</Cynobun>
+                    <CynobunHirsutus>.2</CynobunHirsutus>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="ColdBog"]/allowedPackAnimals</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName="IceSheet"]/wildAnimals</xpath>
+                <value>
+                    <CynobunHirsutus>.05</CynobunHirsutus>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName="IceSheet"]/allowedPackAnimals</xpath>
+                <value>
+                    <li>CynobunHirsutus</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName="SeaIce"]/wildAnimals</xpath>
+                <value>
+                    <CynobunHirsutus>.05</CynobunHirsutus>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName="SeaIce"]/allowedPackAnimals</xpath>
+                <value>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
                 <value>
                     <Cynobun>.1</Cynobun>
+                    <CynobunHirsutus>.2</CynobunHirsutus>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="TemperateForest"]/allowedPackAnimals</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
@@ -79,12 +111,14 @@
                 <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
                 <value>
                     <Cynobun>.13</Cynobun>
+                    <CynobunHirsutus>.26</CynobunHirsutus>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/BiomeDef[defName="AridShrubland"]/allowedPackAnimals</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">

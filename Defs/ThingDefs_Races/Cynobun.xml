@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- ========================== Warg ================================= -->
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>Cynobun</defName>
     <label>bun-dog</label>
@@ -186,4 +184,189 @@
       </li>
     </lifeStages>
     </PawnKindDef>
-  </Defs>
+    
+    <ThingDef ParentName="AnimalThingBase">
+      <defName>CynobunHirsutus</defName>
+      <label>Shaggy bun-dog</label>
+      <description>Scientific-name 'cynobun hirsutus', these heavily-muscled bunny-like creatures are much larger and slower than their short-furred cousins. They are normally vegetarian, but will happily eat meat when available. They are more docile than the smaller bun-dogs, and generally less dangerous.\n\nShaggy bun-dog's are commonly found alongside Bun settlements, where they are regularly sheared of their soft fluff.</description>
+      <statBases>
+        <MoveSpeed>5.0</MoveSpeed>
+        <MarketValue>300</MarketValue>
+        <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+        <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      </statBases>
+      <uiIconScale>1.35</uiIconScale>
+      <tools>
+        <li>
+          <label>left paw</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>20</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+        </li>
+        <li>
+          <label>right paw</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>20</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+        </li>
+        <li>
+          <label>razorfangs</label>
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+          <chanceFactor>0.5</chanceFactor>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>10</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+        </li>
+        <li>
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>5</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+        </li>
+      </tools>
+      <comps>
+        <li Class="CompProperties_Shearable">
+          <woolDef>BunFloof</woolDef>
+          <shearIntervalDays>25</shearIntervalDays>
+          <woolAmount>100</woolAmount>
+        </li>
+      </comps>
+      <race>
+        <herdAnimal>true</herdAnimal>
+        <body>QuadrupedAnimalWithPawsAndTail</body>
+        <maxPreyBodySize>2.3</maxPreyBodySize>
+        <petness>0.2</petness>
+        <baseBodySize>2</baseBodySize>
+        <baseHungerRate>0.8</baseHungerRate>
+        <baseHealthScale>1.7</baseHealthScale>
+        <foodType>OmnivoreRoughAnimal</foodType>
+        <leatherDef>Leather_Plain</leatherDef>
+        <gestationPeriodDays>26</gestationPeriodDays>
+        <trainability>Simple</trainability>
+        <packAnimal>true</packAnimal>
+        <wildness>0.3</wildness>
+        <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+        <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+        <lifeExpectancy>30</lifeExpectancy>
+        <lifeStageAges>
+          <li>
+            <def>AnimalBaby</def>
+            <minAge>0</minAge>
+          </li>
+          <li>
+            <def>AnimalJuvenile</def>
+            <minAge>0.2</minAge>
+          </li>
+          <li>
+            <def>AnimalAdult</def>
+            <minAge>0.45</minAge>
+            <soundWounded>Pawn_Warg_Wounded</soundWounded>
+            <soundDeath>Pawn_Warg_Death</soundDeath>
+            <soundCall>Pawn_Warg_Call</soundCall>
+            <soundAngry>Pawn_Warg_Angry</soundAngry>
+          </li>
+        </lifeStageAges>
+        <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+        <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitPawn</soundMeleeHitBuilding>
+        <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+      </race>
+      <tradeTags>
+        <li>AnimalUncommon</li>
+        <li>AnimalFarm</li>
+      </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+      <defName>CynobunHirsutus</defName>
+      <label>Shaggy bun-dog</label>
+      <race>CynobunHirsutus</race>
+      <combatPower>100</combatPower>
+      <ecoSystemWeight>1.1</ecoSystemWeight>
+      <wildGroupSize>2~6</wildGroupSize>
+      <lifeStages>
+        <li>
+          <label>shaggy bun-dog puppy</label>
+          <labelPlural>shaggy bun-dog puppies</labelPlural>
+          <bodyGraphicData>
+            <texPath>Cynobun/CynobunHirsutus</texPath>
+            <drawSize>1.4</drawSize>
+            <color>(128,118,108)</color>
+            <shaderType>CutoutComplex</shaderType>
+          </bodyGraphicData>
+          <dessicatedBodyGraphicData>
+            <texPath>Cynobun/Dessicated_Cynobun</texPath>
+            <drawSize>1.4</drawSize>
+          </dessicatedBodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Cynobun/CynobunHirsutus</texPath>
+            <drawSize>2.2</drawSize>
+            <color>(102,94,87)</color>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+          </bodyGraphicData>
+          <dessicatedBodyGraphicData>
+            <texPath>Cynobun/Dessicated_Cynobun</texPath>
+            <drawSize>2.2</drawSize>
+          </dessicatedBodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Cynobun/CynobunHirsutus</texPath>
+            <drawSize>2.9</drawSize>
+            <color>(77,71,65)</color>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+          </bodyGraphicData>
+          <dessicatedBodyGraphicData>
+            <texPath>Cynobun/Dessicated_Cynobun</texPath>
+            <drawSize>2.9</drawSize>
+          </dessicatedBodyGraphicData>
+        </li>
+      </lifeStages>
+    </PawnKindDef>
+</Defs>

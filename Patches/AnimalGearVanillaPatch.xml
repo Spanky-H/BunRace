@@ -11,30 +11,35 @@
                 <xpath>/Defs/ThingDef[defName="Apparel_AnimalScarf"]/apparel/tags</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Apparel_AnimalClothes"]/apparel/tags</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Apparel_AnimalFlakArmor"]/apparel/tags</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Apparel_AnimalPlateArmor"]/apparel/tags</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Apparel_AnimalPowerArmor"]/apparel/tags</xpath>
                 <value>
                     <li>Cynobun</li>
+                    <li>CynobunHirsutus</li>
                 </value>
             </li>
         </operations>

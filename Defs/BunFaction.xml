@@ -183,6 +183,7 @@
             </traders>
             <carriers>
               <Cynobun>6</Cynobun>
+              <CynobunHirsutus>6</CynobunHirsutus>
             </carriers>
             <guards>
               <Bun_Tribal_Warrior>3</Bun_Tribal_Warrior>
@@ -331,6 +332,7 @@
             </traders>
             <carriers>
                 <Cynobun>6</Cynobun>
+                <CynobunHirsutus>6</CynobunHirsutus>
             </carriers>
             <guards>
               <Bun_Villager>3</Bun_Villager>

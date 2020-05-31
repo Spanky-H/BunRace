@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ScenarioDef>
+        <defName>BunlanderScenario</defName>
+        <label>Crashed Buns</label>
+        <description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.</description>
+        <scenario>
+            <summary>Three crashlanded survivors - the classic RimWorld experience, but with Buns.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerBunColony</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>3</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <chance>0.5</chance>
+                    <context>PlayerStarter</context>
+                    <hideOffMap>True</hideOffMap>
+                    <hediff>CryptosleepSickness</hediff>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>800</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_BoltActionRifle</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_Revolver</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Plasteel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_FlakPants</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_FlakVest</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_AdvancedHelmet</thingDef>
+                    <stuff>Plasteel</stuff>
+                </li>
+                <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <animalKind>Cynobun</animalKind>
+                    <count>1</count>
+                    <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Steel</thingDef>
+                    <count>450</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>720</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>7</count>
+                </li>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text />
+                    <textKey>GameStartDialog</textKey>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+    <ScenarioDef>
+        <defName>BunTribeScenario</defName>
+        <label>Lost BunTribe</label>
+        <description>Your tribe was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.
+
+Note: Since you'll start poor and lack technology, this is a difficult scenario.</description>
+        <scenario>
+            <summary>Five lost Buns attempt to rebuild. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerBunTribe</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>5</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <chance>0.5</chance>
+                    <context>PlayerStarter</context>
+                    <hediff>Malnutrition</hediff>
+                    <severityRange>0.2~0.4</severityRange>
+                </li>
+                <li Class="ScenPart_SetNeedLevel">
+                    <def>SetNeedLevel</def>
+                    <chance>1</chance>
+                    <context>PlayerStarter</context>
+                    <need>Food</need>
+                    <levelRange>0~0.1</levelRange>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pemmican</thingDef>
+                    <count>400</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <count>20</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Club</thingDef>
+                    <stuff>WoodLog</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Ikwa</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Jade</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Bow_Short</thingDef>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pila</thingDef>
+                </li>
+                <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <animalKind>Cynobun</animalKind>
+                    <count>1</count>
+                    <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+                </li>
+                <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <animalKind>CynobunHirsutus</animalKind>
+                    <count>2</count>
+                    <bondToRandomPlayerPawnChance>0.5</bondToRandomPlayerPawnChance>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>500</count>
+                </li>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>The gods were very angry. The blood machines came at night. They swept through your village, cutting and burning your people with their blades and devil-fire.
+    
+Only a few of you escaped.
+    
+Now, after a harrowing journey, with no friends to turn to, you must build a new home in the wilderness - like your ancestors did.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+    <ScenarioDef>
+        <defName>BuntalityScenario</defName>
+        <label>Naked Buntality</label>
+        <description>You went under anesthetic for a minor surgery. Now you've awoken in a drop pod crashing into a distant planet. You're naked, alone, and totally unprepared. Can you survive?
+
+Warning: There is nothing fair about this scenario - it is extremely difficult and death can happen for any reason.</description>
+        <scenario>
+            <summary>Naked, alone, and utterly Bunprepared. Can you survive? Extremely difficult and unfair.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerBunColony</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                </li>
+                <li Class="ScenPart_Naked">
+                    <def>Naked</def>
+                    <chance>1</chance>
+                    <context>PlayerStarter</context>
+                </li>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>It was supposed to be a minor surgery. Just an hour under anesthetic. You felt totally safe.
+    
+    Now you've awoken inside a drop pod punching through the atmosphere of a distant rimworld.
+    
+    Aside from a slick of mysterious goo all over your body, you are totally naked. With no preparation, no supplies, and no tools, can you survive?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+    <ScenarioDef>
+        <defName>BunExileScenario</defName>
+        <label>BunTribe Exile</label>
+        <description>They threw you out. Why? Maybe you know why, maybe not, but it doesn't matter. You're naked, alone, and totally unprepared. Can you survive?
+
+Warning: There is nothing fair about this scenario - it is extremely difficult and death can happen for any reason.</description>
+        <scenario>
+            <summary>Naked, alone, and utterly Bunprepared. Can you survive? Extremely difficult and unfair.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerBunTribe</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                </li>
+                <li Class="ScenPart_Naked">
+                    <def>Naked</def>
+                    <chance>1</chance>
+                    <context>PlayerStarter</context>
+                </li>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>They took you from your hut in the night and put you in a sack. Hours... maybe days later, they dumped you here. Left alone to die. 
+    
+    You are totally naked and ravenous. With no preparation, no supplies, and no tools, can you survive?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+                <li Class="ScenPart_SetNeedLevel">
+                    <def>SetNeedLevel</def>
+                    <chance>1</chance>
+                    <context>PlayerStarter</context>
+                    <need>Food</need>
+                    <levelRange>0~0.9765092</levelRange>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>
