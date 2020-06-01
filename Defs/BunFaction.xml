@@ -30,7 +30,7 @@
           <li>ClassicStartTechprints</li>
         </startingTechprintsResearchTags>
         <hairTags>
-          <li>UrbanBun</li>
+          <li>Urban</li>
         </hairTags>
         <apparelStuffFilter>
           <thingDefs>
@@ -71,11 +71,11 @@
             <li>TribalStartTechprints</li>
         </startingTechprintsResearchTags>
         <hairTags>
-            <li>TribalBun</li>
+          <li>Tribal</li>
         </hairTags>
         <apparelStuffFilter>
             <thingDefs>
-                <li>Cloth</li>
+                <li>BunFloof</li>
             </thingDefs>
         </apparelStuffFilter>
         <recipePrerequisiteTags>
@@ -108,7 +108,7 @@
         </backstoryFilters>
         <leaderTitle>chief</leaderTitle>
         <hairTags>
-          <li>TribalBun</li>
+          <li>Tribal</li>
         </hairTags>
         <caravanTraderKinds>
           <li>Caravan_Neolithic_BulkGoods</li>
@@ -279,7 +279,7 @@
         </backstoryFilters>
         <geneticVariance>0.8</geneticVariance>
         <hairTags>
-          <li>UrbanBun</li>
+          <li>Rural</li>
         </hairTags>
         <caravanTraderKinds>
           <li>Caravan_Outlander_BulkGoods</li>

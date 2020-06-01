@@ -2,7 +2,6 @@
 <Defs>
     <!--Player Pawnkinds-->
     <PawnKindDef Abstract="True" Name="BasePlayerBunPawnKind">
-        <race>Alien_BunTribe</race>
         <combatPower>30</combatPower>
         <isFighter>false</isFighter>
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -13,6 +12,7 @@
         <defName>Bunlander</defName>
         <label>bunlander</label>
         <defaultFactionType>PlayerBunColony</defaultFactionType>
+        <race>Alien_Bunlander</race>
         <chemicalAddictionChance>0.06</chemicalAddictionChance>
         <apparelTags>
           <li>IndustrialBasic</li>
@@ -33,6 +33,7 @@
         <defName>Bun</defName>
         <label>bun</label>
         <defaultFactionType>PlayerBunTribe</defaultFactionType>
+        <race>Alien_BunTribeNew</race>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <apparelTags>
             <li>Neolithic</li>
@@ -49,7 +50,7 @@
   <!--NPC Pawnkinds-->
   <!--Tribal Pawnkinds-->
   <PawnKindDef Name="BunTribalBase" Abstract="True">
-    <race>Alien_BunTribe</race>
+    <race>Alien_BunTribeNew</race>
     <defaultFactionType>BunTribeCivil</defaultFactionType>
     <maxGenerationAge>60</maxGenerationAge>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
@@ -213,7 +214,7 @@
   <!--Urban Pawnkinds-->
 
   <PawnKindDef Name="BunlanderBase" Abstract="True">
-    <race>Alien_BunTribe</race>
+    <race>Alien_Bunlander</race>
     <defaultFactionType>BunlanderCivil</defaultFactionType>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>

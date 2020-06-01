@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Alien_BunTribe</defName>
+    <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Abstract="true" Name="BaseBun">
         <label>Bun</label>
         <description>A tribe of rabbit-like humanoids. They are small and weak, but have powerful legs.
         
@@ -514,16 +513,7 @@
                     <head>Bun/Heads/</head>
                 </li>
             </graphicPaths>
-            
-            <hairSettings>
-                <hasHair>true</hasHair>
-                <getsGreyAt>50</getsGreyAt>
-                <!--<hairTags>
-                    <li>TribalBun</li>
-                    <li>UrbanBun</li>
-                </hairTags>-->
-            </hairSettings>
-            
+                       
             <!--<pawnKindSettings>
 
             </pawnKindSettings>
@@ -539,4 +529,44 @@
             -->
         </alienRace>
     </AlienRace.ThingDef_AlienRace>
+    
+    <AlienRace.ThingDef_AlienRace ParentName="BaseBun">
+        <!--base bun type for backwards compatibility-->
+        <defName>Alien_BunTribe</defName>
+        <alienRace>
+            <hairSettings>
+                <hasHair>true</hasHair>
+                <getsGreyAt>50</getsGreyAt>
+            </hairSettings>
+        </alienRace>
+    </AlienRace.ThingDef_AlienRace>
+    
+    <AlienRace.ThingDef_AlienRace ParentName="BaseBun">
+        <!--new tribal specific bun type-->
+        <defName>Alien_BunTribeNew</defName>
+        <alienRace>
+            <hairSettings>
+                <hasHair>true</hasHair>
+                <getsGreyAt>50</getsGreyAt>
+                <hairTags>
+                    <li>TribalBun</li>
+                </hairTags>
+            </hairSettings>
+        </alienRace>
+    </AlienRace.ThingDef_AlienRace>
+    
+    <AlienRace.ThingDef_AlienRace ParentName="BaseBun">
+        <!--new outlander specific bun type-->
+        <defName>Alien_Bunlander</defName>
+        <alienRace>
+            <hairSettings>
+                <hasHair>true</hasHair>
+                <getsGreyAt>50</getsGreyAt>
+                <hairTags>
+                    <li>UrbanBun</li>
+                </hairTags>
+            </hairSettings>
+        </alienRace>
+    </AlienRace.ThingDef_AlienRace>
+    
 </Defs>

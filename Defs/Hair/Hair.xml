@@ -133,6 +133,16 @@
 		</hairTags>
 	  </HairDef>
 	  <HairDef>
+		<label>Bun Short 4</label>
+		<hairGender>Any</hairGender>
+		<texPath>Bun/Hair/Bun_short_4</texPath>
+		<defName>BunShort4</defName>
+		<hairTags>
+			<li>TribalBun</li>
+			<li>UrbanBun</li>
+		</hairTags>
+	  </HairDef>
+	  <HairDef>
 		<label>Bun Twin-Tail 1</label>
 		<hairGender>Any</hairGender>
 		<texPath>Bun/Hair/Bun_twin_1</texPath>
