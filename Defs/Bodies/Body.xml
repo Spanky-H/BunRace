@@ -170,7 +170,7 @@
 								<li>
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
-									<coverage>0.07</coverage>
+									<coverage>0.2</coverage>
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
@@ -179,7 +179,7 @@
 								<li>
 									<def>Ear</def>
 									<customLabel>right ear</customLabel>
-									<coverage>0.07</coverage>
+									<coverage>0.2</coverage>
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
@@ -458,7 +458,7 @@
                 <li>
                   <def>Toe</def>
                   <customLabel>left outer toe</customLabel>
-                  <coverage>0.07</coverage>
+                  <coverage>0.08</coverage>
                   <groups>
                     <li>Feet</li>
                   </groups>
@@ -474,7 +474,7 @@
                 <li>
                   <def>Toe</def>
                   <customLabel>left third toe</customLabel>
-                  <coverage>0.09</coverage>
+                  <coverage>0.08</coverage>
                   <groups>
                     <li>Feet</li>
                   </groups>
@@ -482,7 +482,7 @@
                 <li>
                   <def>Toe</def>
                   <customLabel>left inner toe</customLabel>
-                  <coverage>0.09</coverage>
+                  <coverage>0.08</coverage>
                   <groups>
                     <li>Feet</li>
                   </groups>
@@ -529,7 +529,7 @@
                 <li>
                   <def>Toe</def>
                   <customLabel>right outer toe</customLabel>
-                  <coverage>0.07</coverage>
+                  <coverage>0.08</coverage>
                   <groups>
                     <li>Feet</li>
                   </groups>
@@ -545,7 +545,7 @@
                 <li>
                   <def>Toe</def>
                   <customLabel>right third toe</customLabel>
-                  <coverage>0.09</coverage>
+                  <coverage>0.08</coverage>
                   <groups>
                     <li>Feet</li>
                   </groups>
@@ -553,7 +553,7 @@
                 <li>
                   <def>Toe</def>
                   <customLabel>right inner toe</customLabel>
-                  <coverage>0.09</coverage>
+                  <coverage>0.08</coverage>
                   <groups>
                     <li>Feet</li>
                   </groups>

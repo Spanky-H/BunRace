@@ -626,7 +626,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BunMercenaryEliteTierBase">
-    <defName>PirateBoss</defName>
+    <defName>BunPirateBoss</defName>
     <label>boss</label>
     <labelPlural>bosses</labelPlural>
     <factionLeader>true</factionLeader>

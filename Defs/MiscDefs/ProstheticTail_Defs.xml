@@ -58,4 +58,59 @@
         </appliedOnFixedBodyParts>
         <addsHediff>Bun_ProstheticTail</addsHediff>
     </RecipeDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Bun_BionicTail</defName>
+        <label>bionic bun tail</label>
+        <labelNoun>a bionic bun tail</labelNoun>
+        <description>An installed bionic bun tail.</description>
+        <descriptionHyperlinks><ThingDef>Bun_BionicTail</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>Bun_BionicTail</spawnThingOnRemoved>
+        <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>Bun_BionicTail</defName>
+        <label>bionic bun tail</label>
+        <description>An advanced tail prosthesis. It consists of a high-density counterweight and gyroscope system anchored to the tail bone with artifical muscle fibers and controlled by a local expert system. It increases both balance and maneuverability considerably.</description>
+        <descriptionHyperlinks><RecipeDef>InstallBun_ProstheticTail</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Synthread>10</Synthread>
+            <Plasteel>5</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+          </costList>
+        <statBases>
+            <Mass>6</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallBun_BionicTail</defName>
+        <label>install bionic bun tail</label>
+        <description>Install a bionic bun tail.</description>
+        <descriptionHyperlinks><ThingDef>Bun_BionicTail</ThingDef></descriptionHyperlinks>
+        <jobString>Installing bionic bun tail.</jobString>
+        <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Bun_BionicTail</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Bun_BionicTail</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>BunTail</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Bun_BionicTail</addsHediff>
+    </RecipeDef>
 </Defs>

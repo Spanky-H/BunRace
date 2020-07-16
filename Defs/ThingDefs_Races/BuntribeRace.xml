@@ -25,6 +25,7 @@
             <Mass>60</Mass>
             <MeatAmount>75</MeatAmount>
             <LeatherAmount>40</LeatherAmount>
+            <MarketValue>1750</MarketValue>
         </statBases>
         <race>
             <leatherDef>Leather_Human</leatherDef>
@@ -237,12 +238,16 @@
                                 </bodyTypes>
                             </east>
                             </offsets>
+                            <hediffGraphics>
+                                <Bun_BionicTail>Bun/Tails/Bionic/BunTail_Bionic</Bun_BionicTail>
+                            </hediffGraphics>
                         </li>
                         <!--Left Ear A-->
                         <li>
                             <path>Bun/Ear/Bun_Ear_Left_A</path>
                             <bodyPart>left ear</bodyPart>
                             <inFrontOfBody>true</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
                             <colorChannel>hair</colorChannel>
                             <drawSize>0.85</drawSize>
                             <angle>0</angle>
@@ -254,15 +259,18 @@
                                 </south>
                                 <north>
                                     <bodyTypes>
-                                        <Female>(0,0.9)</Female>
+                                        <Female>(0,0.95)</Female>
                                     </bodyTypes>
                                 </north>
                                 <east>
                                     <bodyTypes>
-                                    <Female>(-0.57,0.57)</Female>
+                                    <Female>(-0.57,0.61)</Female>
                                     </bodyTypes>
                                 </east>
                             </offsets>
+                            <hediffGraphics>
+                                <BionicEar>Bun/Ear/Bionic/Bun_Ear_Bionic_Left_A</BionicEar>
+                            </hediffGraphics>
                         </li>
                         <!--Left Ear B-->
                         <li>
@@ -281,21 +289,25 @@
                                 </south>
                                 <north>
                                     <bodyTypes>
-                                        <Female>(0,0.9)</Female>
+                                        <Female>(0,0.95)</Female>
                                     </bodyTypes>
                                 </north>
                                 <east>
                                     <bodyTypes>
-                                    <Female>(-0.57,0.57)</Female>
+                                    <Female>(-0.57,0.61)</Female>
                                     </bodyTypes>
                                 </east>
                             </offsets>
+                            <hediffGraphics>
+                                <BionicEar>Bun/Ear/Bionic/Bun_Ear_Bionic_Left_B</BionicEar>
+                            </hediffGraphics>
                         </li>
                         <!--Right Ear A-->
                         <li>
                             <path>Bun/Ear/Bun_Ear_Right_A</path>
                             <bodyPart>right ear</bodyPart>
                             <inFrontOfBody>true</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
                             <colorChannel>hair</colorChannel>
                             <drawSize>0.85</drawSize>
                             <angle>0</angle>
@@ -307,15 +319,18 @@
                                 </south>
                                 <north>
                                     <bodyTypes>
-                                        <Female>(0,0.9)</Female>
+                                        <Female>(0,0.95)</Female>
                                     </bodyTypes>
                                 </north>
                                 <east>
                                     <bodyTypes>
-                                    <Female>(-0.57,0.57)</Female>
+                                    <Female>(-0.57,0.61)</Female>
                                     </bodyTypes>
                                 </east>
                             </offsets>
+                            <hediffGraphics>
+                                <BionicEar>Bun/Ear/Bionic/Bun_Ear_Bionic_Right_A</BionicEar>
+                            </hediffGraphics>
                         </li>
                         <!--Right Ear B-->
                         <li>
@@ -334,15 +349,18 @@
                                 </south>
                                 <north>
                                     <bodyTypes>
-                                        <Female>(0,0.9)</Female>
+                                        <Female>(0,0.95)</Female>
                                     </bodyTypes>
                                 </north>
                                 <east>
                                     <bodyTypes>
-                                    <Female>(-0.57,0.57)</Female>
+                                    <Female>(-0.57,0.61)</Female>
                                     </bodyTypes>
                                 </east>
                             </offsets>
+                            <hediffGraphics>
+                                <BionicEar>Bun/Ear/Bionic/Bun_Ear_Bionic_Right_B</BionicEar>
+                            </hediffGraphics>
                         </li>
                         <!--Fluff Butt-->
                         <li>
@@ -510,6 +528,12 @@
         <!--base bun type for backwards compatibility-->
         <defName>Alien_BunTribe</defName>
         <alienRace>
+            <generalSettings>
+                <notXenophobistTowards>
+                    <li>Alien_BunTribeNew</li>
+                    <li>Alien_Bunlander</li>
+                </notXenophobistTowards>
+            </generalSettings>
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
@@ -521,6 +545,12 @@
         <!--new tribal specific bun type-->
         <defName>Alien_BunTribeNew</defName>
         <alienRace>
+            <generalSettings>
+                <notXenophobistTowards>
+                    <li>Alien_BunTribe</li>
+                    <li>Alien_Bunlander</li>
+                </notXenophobistTowards>
+            </generalSettings>
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
@@ -535,6 +565,12 @@
         <!--new outlander specific bun type-->
         <defName>Alien_Bunlander</defName>
         <alienRace>
+            <generalSettings>
+                <notXenophobistTowards>
+                    <li>Alien_BunTribe</li>
+                    <li>Alien_BunTribeNew</li>
+                </notXenophobistTowards>
+            </generalSettings>
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
