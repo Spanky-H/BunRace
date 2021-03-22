@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- First lets set up our file references for all our syllables and surnames. First names are sort of complicated, so we define them here. Thanks FantasyNameGenerator.com! -->
+    <RulePackDef>
+        <defName>NamerBunUtility</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>MaleBunFirst->[SylBun1][SylBun2][SylBun3][SylBun6]</li>
+                <li>MaleBunFirst->[SylBun1][SylBun2][SylBun4][SylBun6]</li>
+                <li>FemaleBunFirst->[SylBun1][SylBun2][SylBun3][SylBun5]</li>
+                <li>FemaleBunFirst->[SylBun1][SylBun2][SylBun4][SylBun5]</li>
+                <li>FemaleBunFirst->[SylBun1][SylBun2][SylBun3][SylBun2][SylBun3][SylBun5]</li>
+                <li>FemaleBunFirst->[SylBun1][SylBun2][SylBun3][SylBun2][SylBun4][SylBun5]</li>
+                <li>FemaleBunFirst->[SylBun1][SylBun2][SylBun4][SylBun2][SylBun3][SylBun5]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>SylBun1->WordParts/Syllables_BunNames1</li>
+                <li>SylBun2->WordParts/Syllables_BunNames2</li>
+                <li>SylBun3->WordParts/Syllables_BunNames3</li>
+                <li>SylBun4->WordParts/Syllables_BunNames4</li>
+                <li>SylBun5->WordParts/Syllables_BunNames5</li>
+                <li>SylBun6->WordParts/Syllables_BunNames6</li>
+                <li>BunSurname->Words/BunSurnames</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    
+    <RulePackDef>
+        <defName>NamerPersonTribalBunMale</defName>
+        <include>
+            <li>NamerBunUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=3)->[MaleBunFirst] [Animal]</li>
+                <li>r_name(p=3)->[MaleBunFirst] [Color]</li>
+                <li>r_name(p=2)->[MaleBunFirst] [BunSurname]</li>
+                <li>r_name->[MaleBunFirst] '[AnimalBadass]' [BunSurname]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerPersonTribalBunFemale</defName>
+        <include>
+            <li>NamerBunUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=3)->[FemaleBunFirst] [Animal]</li>
+                <li>r_name(p=3)->[FemaleBunFirst] [Color]</li>
+                <li>r_name(p=2)->[FemaleBunFirst] [BunSurname]</li>
+                <li>r_name->[FemaleBunFirst] '[AnimalBadass]' [BunSurname]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerPersonBunlanderMale</defName>
+        <include>
+            <li>NamerBunUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[MaleBunFirst] [BunSurname]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerPersonBunlanderFemale</defName>
+        <include>
+            <li>NamerBunUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[FemaleBunFirst] [BunSurname]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+                <!-- ========== Add groups ========== -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName="Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[customLabel="left arm"]/groups</xpath>
+                    <value>
+                      <li>LeftArm</li>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName="Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[customLabel="right arm"]/groups</xpath>
+                    <value>
+                      <li>RightArm</li>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName="Alien_BunTribe"]/corePart/parts/li[customLabel="left shoulder"]/groups</xpath>
+                    <value>
+                      <li>LeftShoulder</li>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName="Alien_BunTribe"]/corePart/parts/li[customLabel="right shoulder"]/groups</xpath>
+                    <value>
+                      <li>RightShoulder</li>
+                    </value>
+                </li>
+
+                <!-- ========== Modify coverage ========== -->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Ribcage"]/coverage</xpath>
+                    <value>
+                    <coverage>0.012</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Pelvis"]/coverage</xpath>
+                    <value>
+                    <coverage>0.05</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Stomach"]/coverage</xpath>
+                    <value>
+                    <coverage>0.05</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Heart"]/coverage</xpath>
+                    <value>
+                    <coverage>0.04</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Lung"]/coverage</xpath>
+                    <value>
+                    <coverage>0.055</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Kidney"]/coverage</xpath>
+                    <value>
+                    <coverage>0.03</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Liver"]/coverage</xpath>
+                    <value>
+                    <coverage>0.06</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Neck"]/coverage</xpath>
+                    <value>
+                    <coverage>0.055</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Skull"]/parts/li[def = "Brain"]/coverage</xpath>
+                    <value>
+                    <coverage>0.9</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def = "Eye"]/coverage</xpath>
+                    <value>
+                    <coverage>0.05</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def = "Nose"]/coverage</xpath>
+                    <value>
+                    <coverage>0.08</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Shoulder"]/coverage</xpath>
+                    <value>
+                    <coverage>0.085</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[def = "Clavicle"]/coverage</xpath>
+                    <value>
+                    <coverage>0.06</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[def = "Arm"]/parts/li[def="Humerus"]/coverage</xpath>
+                    <value>
+                    <coverage>0.15</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[def = "Arm"]/parts/li[def="Radius"]/coverage</xpath>
+                    <value>
+                    <coverage>0.15</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Leg"]/coverage</xpath>
+                    <value>
+                    <coverage>0.1</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Leg"]/parts/li[def="Femur"]/coverage</xpath>
+                    <value>
+                    <coverage>0.15</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Leg"]/parts/li[def="Tibia"]/coverage</xpath>
+                    <value>
+                    <coverage>0.15</coverage>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Leg"]/parts/li[def="Foot"]/coverage</xpath>
+                    <value>
+                    <coverage>0.1</coverage>
+                    </value>
+                </li>
+
+                <!-- ========== Add armor coverage (for pawns with non-zero armor that use Alien_BunTribe body) ========== -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "BunTail"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Neck"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def = "Head"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def = "Head"]/parts/li[def="Jaw"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def = "Head"]/parts/li[def="Nose"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Neck"]/parts/li[def = "Head"]/parts/li[def="Ear"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Shoulder"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[def = "Arm"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[def = "Arm"]/parts/li[def = "Hand"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Shoulder"]/parts/li[def = "Arm"]/parts/li[def = "Hand"]/parts/li[def = "Finger"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def = "Leg"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Leg"]/parts/li[def = "Foot"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BodyDef[defName = "Alien_BunTribe"]/corePart/parts/li[def="Leg"]/parts/li[def = "Foot"]/parts/li[def = "Toe"]/groups</xpath>
+                    <value>
+                    <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>
+
+                <!-- ========== Bun Race defs ========== -->
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseBun"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.RacePropertiesExtensionCE">
+                            <bodyShape>Humanoid</bodyShape>
+                        </li>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseBun"]/statBases</xpath>
+                    <value>
+                        <!-- ========== Slightly more dodgey, less able to parry ========== -->
+                        <MeleeDodgeChance>1.1</MeleeDodgeChance>
+                        <MeleeCritChance>1</MeleeCritChance>
+                        <MeleeParryChance>.9</MeleeParryChance>
+                    </value>
+                </li>
+                
+                <!-- ========== Weaker/faster punches and headbutts, focus on powerful kicks ========== -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseBun"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>left fist</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>.85</power>
+                                <cooldownTime>1</cooldownTime>
+                                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                                <chanceFactor>0.2</chanceFactor>
+                                <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>right fist</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>.85</power>
+                                <cooldownTime>1</cooldownTime>
+                                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                                <chanceFactor>0.2</chanceFactor>
+                                <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>head</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>1.7</power>
+                                <cooldownTime>4</cooldownTime>
+                                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                <chanceFactor>0.1</chanceFactor>
+                                <armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>bun kick</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>3</power>
+                                <cooldownTime>3</cooldownTime>
+                                <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+                                <armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseBun"]/comps</xpath>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseBun"]</xpath>
+                    <value>
+                      <comps />
+                    </value>
+                  </nomatch>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseBun"]/comps</xpath>
+                    <value>
+                        <li>
+                        <compClass>CombatExtended.CompPawnGizmo</compClass>
+                        </li>
+                        <li Class="CombatExtended.CompProperties_Suppressable" />
+                    </value>
+                </li>
+            
+                <!-- ========== Bun floof is a little bulkier, better vs blunt, worse vs heat compared to normal wool ========== -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="BunFloof"]/statBases</xpath>
+                    <value>
+                        <Bulk>0.35</Bulk>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BunFloof"]/statBases/StuffPower_Armor_Blunt</xpath>
+                    <value>
+                        <StuffPower_Armor_Blunt>0.055</StuffPower_Armor_Blunt>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BunFloof"]/statBases/StuffPower_Armor_Heat</xpath>
+                    <value>
+                        <StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
+                    </value>
+                </li>
+                
+                <!-- ========== Cynobun Patches ========== -->
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="Cynobun"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.RacePropertiesExtensionCE">
+                            <bodyShape>QuadrupedLow</bodyShape>
+                        </li>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Cynobun"]/statBases/MoveSpeed</xpath>
+                    <value>
+                        <MoveSpeed>8</MoveSpeed>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Cynobun"]/statBases</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.075</ArmorRating_Blunt>
+                        <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                        <MeleeDodgeChance>0.21</MeleeDodgeChance>
+                        <MeleeCritChance>0.20</MeleeCritChance>
+                        <MeleeParryChance>0.09</MeleeParryChance>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Cynobun"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>left claw</label>
+                                <capacities>
+                                    <li>Scratch</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.19</cooldownTime>
+                                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <armorPenetrationBlunt>2.250</armorPenetrationBlunt>
+                                <armorPenetrationSharp>0.75</armorPenetrationSharp>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>right claw</label>
+                                <capacities>
+                                    <li>Scratch</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.19</cooldownTime>
+                                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <armorPenetrationBlunt>2.250</armorPenetrationBlunt>
+                                <armorPenetrationSharp>0.75</armorPenetrationSharp>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <capacities>
+                                    <li>Bite</li>
+                                </capacities>
+                                <power>20</power>
+                                <cooldownTime>1.46</cooldownTime>
+                                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <chanceFactor>2</chanceFactor>
+                                <armorPenetrationSharp>0.8</armorPenetrationSharp>
+                                <armorPenetrationBlunt>5.063</armorPenetrationBlunt>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>head</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>4</power>
+                                <cooldownTime>3.2</cooldownTime>
+                                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                <chanceFactor>0.2</chanceFactor>
+                                <armorPenetrationBlunt>1.225</armorPenetrationBlunt>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Cynobun"]/combatPower</xpath>
+                    <value>
+                        <combatPower>140</combatPower>
+                    </value>
+                </li>
+
+                <!-- ========== CynobunHirsutus Patches ========== -->
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="CynobunHirsutus"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.RacePropertiesExtensionCE">
+                            <bodyShape>QuadrupedLow</bodyShape>
+                        </li>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="CynobunHirsutus"]/statBases/MoveSpeed</xpath>
+                    <value>
+                        <MoveSpeed>6</MoveSpeed>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CynobunHirsutus"]/statBases</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.075</ArmorRating_Blunt>
+                        <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                        <MeleeDodgeChance>0.12</MeleeDodgeChance>
+                        <MeleeCritChance>0.27</MeleeCritChance>
+                        <MeleeParryChance>0.20</MeleeParryChance>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="CynobunHirsutus"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>left claw</label>
+                                <capacities>
+                                    <li>Scratch</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.19</cooldownTime>
+                                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <armorPenetrationBlunt>2.250</armorPenetrationBlunt>
+                                <armorPenetrationSharp>0.75</armorPenetrationSharp>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>right claw</label>
+                                <capacities>
+                                    <li>Scratch</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.19</cooldownTime>
+                                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <armorPenetrationBlunt>2.250</armorPenetrationBlunt>
+                                <armorPenetrationSharp>0.75</armorPenetrationSharp>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>head</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>4</power>
+                                <cooldownTime>3.2</cooldownTime>
+                                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                <chanceFactor>0.2</chanceFactor>
+                                <armorPenetrationBlunt>1.225</armorPenetrationBlunt>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="CynobunHirsutus"]/combatPower</xpath>
+                    <value>
+                        <combatPower>90</combatPower>
+                    </value>
+                </li>
+
+                <!-- ========== Pawnkind Patches ========== -->
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Grenadier_Destructive"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>10</min>
+                          <max>30</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>200</min>
+                          <max>600</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>OutlanderShield</li>
+                        </shieldTags>
+                        <shieldChance>0.5</shieldChance>
+                        <forcedSidearm>
+                          <sidearmMoney>
+                            <min>150</min>
+                            <max>350</max>
+                          </sidearmMoney>
+                          <weaponTags>
+                            <li>CE_Sidearm_Melee</li>
+                          </weaponTags>
+                        </forcedSidearm>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Grenadier_EMP"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>10</min>
+                          <max>30</max>
+                        </primaryMagazineCount>
+                        <forcedSidearm>
+                          <sidearmMoney>
+                            <min>100</min>
+                            <max>250</max>
+                          </sidearmMoney>
+                          <weaponTags>
+                            <li>CE_Sidearm</li>
+                          </weaponTags>
+                        <magazineCount>
+                          <min>2</min>
+                          <max>5</max>
+                        </magazineCount>          
+                        </forcedSidearm>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Grenadier_EMP"]/label</xpath>
+                    <value>
+                        <label>advanced grenadier</label>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAdd">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Grenadier_EMP"]/weaponTags</xpath>
+                    <value>
+                      <li>CE_GrenadeFlashbang</li>
+                        <li>GrenadeSmoke</li>
+                        <li>GrenadeDestructive</li>	
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAdd">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Grenadier_EMP"]</xpath>
+                    <value>
+                      <combatPower>85</combatPower>
+                    </value>
+                  </li>
+
+                  <!-- Get rid of dedicate smoke grenadier -->
+                  <li Class="PatchOperationRemove">
+                      <xpath>/Defs/PawnKindDef[defName="Bun_Grenadier_Smoke"]</xpath>
+                  </li>
+                
+                  <li Class="PatchOperationAdd">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Mercenary_Gunner"]</xpath>
+                    <value>
+                    <weaponMoney>250~350</weaponMoney>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                      <xpath>/Defs/PawnKindDef[defName="Bun_Mercenary_Gunner" or defName="Bun_Mercenary_Gunner_Acidifier"]</xpath>
+                      <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>2</min>
+                          <max>4</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>200</min>
+                          <max>600</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>OutlanderShield</li>
+                        </shieldTags>
+                        <shieldChance>0.8</shieldChance>
+                        <sidearms>
+                          <li>
+                            <generateChance>0.5</generateChance>
+                            <sidearmMoney>
+                              <min>20</min>
+                              <max>120</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Melee</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                      </value>
+                  </li>
+                
+                  <li Class="PatchOperationAdd">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Mercenary_Sniper" or defName="Bun_Mercenary_Sniper_Acidifier"]</xpath>
+                    <value>
+                    <weaponMoney>415~550</weaponMoney>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                      <xpath>/Defs/PawnKindDef[defName="Bun_Mercenary_Sniper" or defName="Bun_Mercenary_Sniper_Acidifier"]</xpath>
+                      <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>3</min>
+                          <max>5</max>
+                        </primaryMagazineCount>
+                        <sidearms>
+                          <li>
+                            <generateChance>1</generateChance>
+                            <sidearmMoney>
+                              <min>60</min>
+                              <max>150</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Melee</li>
+                            </weaponTags>
+                          </li>
+                          <li>
+                            <generateChance>0.5</generateChance>
+                            <sidearmMoney>
+                              <min>80</min>
+                              <max>120</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                      </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Mercenary_Heavy"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>1</min>
+                          <max>4</max>
+                        </primaryMagazineCount>
+                        <forcedSidearm>
+                          <sidearmMoney>
+                            <min>150</min>
+                            <max>350</max>
+                          </sidearmMoney>
+                          <weaponTags>
+                            <li>CE_SMG</li>
+                          </weaponTags>
+                          <magazineCount>
+                            <min>0</min>
+                            <max>1</max>
+                          </magazineCount>
+                        </forcedSidearm>
+                        <sidearms>
+                          <li>
+                            <generateChance>0.5</generateChance>
+                            <sidearmMoney>
+                              <min>60</min>
+                              <max>150</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Melee</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName = "Bun_Mercenary_Slasher" or defName="Bun_Mercenary_Slasher_Acidifier"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <shieldMoney>
+                          <min>500</min>
+                          <max>1400</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>OutlanderShield</li>
+                        </shieldTags>
+                        <shieldChance>0.9</shieldChance>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[@Name = "BunMercenaryEliteTierBase"]/weaponMoney</xpath>
+                    <value>
+                      <weaponMoney>
+                        <min>850</min>
+                        <max>1100</max>
+                      </weaponMoney>
+                    </value>
+                  </li>
+                    
+                   <!-- Gives all elite-tier pirates and mercs access to charge weapons. -->
+                   <li Class="PatchOperationAdd">
+                   <xpath>/Defs/PawnKindDef[@Name="BunMercenaryEliteTierBase"]/weaponTags</xpath>
+                   <value>
+                    <li>SpacerGun</li>
+                   </value>
+                   </li>	
+                
+                  <li Class="PatchOperationAddModExtension">
+                      <xpath>/Defs/PawnKindDef[@Name = "BunMercenaryEliteTierBase"  or defName="Bun_Mercenary_Elite_Acidifier"]</xpath>
+                      <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>3</min>
+                          <max>5</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>1000</min>
+                          <max>1600</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>OutlanderShield</li>
+                        </shieldTags>
+                        <shieldChance>0.9</shieldChance>
+                        <sidearms>
+                          <li>
+                            <sidearmMoney>
+                              <min>400</min>
+                              <max>800</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Melee</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                      </value>
+                  </li>
+                
+                  <!-- ========== Outlander ========== -->
+                
+                  <li Class="PatchOperationAddModExtension">
+                      <xpath>/Defs/PawnKindDef[defName="Bun_Villager" or defName="Bun_Town_Trader" or defName="Bun_Town_Councilman"]</xpath>
+                      <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>1</min>
+                          <max>2</max>
+                        </primaryMagazineCount>
+                        <sidearms>
+                          <li>
+                            <generateChance>0.5</generateChance>
+                            <sidearmMoney>
+                              <min>20</min>
+                              <max>120</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Melee</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                      </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                      <xpath>/Defs/PawnKindDef[defName="Bun_Town_Guard"]</xpath>
+                      <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>2</min>
+                          <max>4</max>
+                        </primaryMagazineCount>
+                        <sidearms>
+                          <li>
+                            <generateChance>0.5</generateChance>
+                            <sidearmMoney>
+                              <min>20</min>
+                              <max>120</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Melee</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                      </value>
+                  </li>
+                
+                  <!-- ========== Tribal ========== -->
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Penitent"]/weaponMoney</xpath>
+                    <value>
+                      <weaponMoney>50~150</weaponMoney>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Penitent"]/combatPower</xpath>
+                    <value>
+                      <combatPower>16</combatPower>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Warrior"]/weaponMoney</xpath>
+                    <value>
+                      <weaponMoney>80~150</weaponMoney>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Warrior"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <shieldMoney>
+                          <min>100</min>
+                          <max>150</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.9</shieldChance>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Warrior"]/combatPower</xpath>
+                    <value>
+                      <combatPower>24</combatPower>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Archer"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>20</min>
+                          <max>40</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>100</min>
+                          <max>130</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.6</shieldChance>
+                        <sidearms>
+                          <li>
+                            <sidearmMoney>
+                              <min>80</min>
+                              <max>160</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Tribal</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Archer"]/combatPower</xpath>
+                    <value>
+                      <combatPower>30</combatPower>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Hunter"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>25</min>
+                          <max>50</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>100</min>
+                          <max>140</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.6</shieldChance>
+                        <sidearms>
+                          <li>
+                            <sidearmMoney>
+                              <min>80</min>
+                              <max>240</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Tribal</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Hunter"]/combatPower</xpath>
+                    <value>
+                      <combatPower>45</combatPower>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_HeavyArcher"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>20</min>
+                          <max>40</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>100</min>
+                          <max>160</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.6</shieldChance>
+                        <sidearms>
+                          <li>
+                            <sidearmMoney>
+                              <min>80</min>
+                              <max>300</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Tribal</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_HeavyArcher"]/combatPower</xpath>
+                    <value>
+                      <combatPower>60</combatPower>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Berserker"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <shieldMoney>
+                          <min>120</min>
+                          <max>160</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.9</shieldChance>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_Berserker"]/combatPower</xpath>
+                    <value>
+                      <combatPower>60</combatPower>
+                    </value>
+                  </li>
+                  
+                   <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_ChiefMelee"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <shieldMoney>
+                          <min>120</min>
+                          <max>160</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.9</shieldChance>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_ChiefRanged"]</xpath>
+                    <value>
+                      <li Class="CombatExtended.LoadoutPropertiesExtension">
+                        <primaryMagazineCount>
+                          <min>30</min>
+                          <max>60</max>
+                        </primaryMagazineCount>
+                        <shieldMoney>
+                          <min>120</min>
+                          <max>160</max>
+                        </shieldMoney>
+                        <shieldTags>
+                          <li>TribalShield</li>
+                        </shieldTags>
+                        <shieldChance>0.9</shieldChance>
+                        <sidearms>
+                          <li>
+                            <sidearmMoney>
+                              <min>100</min>
+                              <max>600</max>
+                            </sidearmMoney>
+                            <weaponTags>
+                              <li>CE_Sidearm_Tribal</li>
+                            </weaponTags>
+                          </li>
+                        </sidearms>
+                      </li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="Bun_Tribal_ChiefRanged"]/weaponTags/li[.="NeolithicRangedChief"]</xpath>
+                    <value>
+                      <li>Gun</li>
+                    </value>
+                  </li>
+                
+                  <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[@Name="BunTribalChiefBase"]/weaponMoney</xpath>
+                    <value>
+                      <weaponMoney>
+                        <min>230</min>
+                        <max>300</max>
+                      </weaponMoney>
+                    </value>
+                  </li>
+
+                  <!-- Update Scenarios -->
+                  <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ScenarioDef[defName="BunlanderScenario"]/scenario/parts</xpath>
+                    <value>
+                        <li Class="ScenPart_StartingThing_Defined">
+                          <def>StartingThing_Defined</def>
+                          <thingDef>Ammo_303British_FMJ</thingDef>
+                          <count>100</count>
+                        </li>
+                        <li Class="ScenPart_StartingThing_Defined">
+                          <def>StartingThing_Defined</def>
+                          <thingDef>Ammo_44Magnum_FMJ</thingDef>
+                          <count>60</count>
+                        </li>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ScenarioDef[defName="BunlanderScenario"]/scenario/parts/li[thingDef="Apparel_AdvancedHelmet"]</xpath>
+                </li>
+                
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ScenarioDef[defName="BunlanderScenario"]/scenario/parts/li[thingDef="Apparel_FlakVest"]</xpath>
+                </li>
+                
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ScenarioDef[defName="BunlanderScenario"]/scenario/parts/li[thingDef="Apparel_FlakPants"]</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ScenarioDef[defName="BunTribeScenario"]/scenario/parts</xpath>
+                    <value>
+                        <li Class="ScenPart_StartingThing_Defined">
+                          <def>StartingThing_Defined</def>
+                          <thingDef>Ammo_Arrow_Stone</thingDef>
+                          <count>100</count>
+                        </li>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ScenarioDef[defName="BunTribeScenario"]/scenario/parts/li[thingDef="Pila"]</xpath>
+                    <value>
+                        <count>20</count>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>    
+</Patch>

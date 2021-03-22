@@ -18,6 +18,8 @@
           </li>
         </backstoryFilters>
         <factionIconPath>World/WorldObjects/Expanding/BunTown</factionIconPath>
+        <pawnNameMaker>NamerPersonBunlanderMale</pawnNameMaker>
+        <pawnNameMakerFemale>NamerPersonBunlanderFemale</pawnNameMakerFemale>
         <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
         <factionNameMaker>NamerFactionOutlander</factionNameMaker>
         <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
@@ -57,7 +59,8 @@
         </backstoryFilters>
         <factionIconPath>World/WorldObjects/Expanding/BunVillage</factionIconPath>
         <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-        <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+        <pawnNameMaker>NamerPersonTribalBunMale</pawnNameMaker>
+        <pawnNameMakerFemale>NamerPersonTribalBunFemale</pawnNameMakerFemale>
         <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
         <factionNameMaker>NamerFactionTribal</factionNameMaker>
         <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
@@ -97,7 +100,8 @@
         <geneticVariance>0.1</geneticVariance>
         <factionNameMaker>NamerFactionTribal</factionNameMaker>
         <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-        <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+        <pawnNameMaker>NamerPersonTribalBunMale</pawnNameMaker>
+        <pawnNameMakerFemale>NamerPersonTribalBunFemale</pawnNameMakerFemale>
         <techLevel>Neolithic</techLevel>
         <backstoryFilters>
           <li>
@@ -262,6 +266,8 @@
         <factionIconPath>World/WorldObjects/Expanding/BunTown</factionIconPath>
         <factionNameMaker>NamerFactionOutlander</factionNameMaker>
         <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <pawnNameMaker>NamerPersonBunlanderMale</pawnNameMaker>
+        <pawnNameMakerFemale>NamerPersonBunlanderFemale</pawnNameMakerFemale>
         <techLevel>Industrial</techLevel>
         <backstoryFilters>
           <li>

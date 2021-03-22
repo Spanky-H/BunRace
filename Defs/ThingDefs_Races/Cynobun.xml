@@ -232,24 +232,6 @@
           </surpriseAttack>
         </li>
         <li>
-          <label>razorfangs</label>
-          <capacities>
-            <li>Bite</li>
-          </capacities>
-          <power>10</power>
-          <cooldownTime>2</cooldownTime>
-          <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-          <chanceFactor>0.5</chanceFactor>
-          <surpriseAttack>
-            <extraMeleeDamages>
-              <li>
-                <def>Stun</def>
-                <amount>10</amount>
-              </li>
-            </extraMeleeDamages>
-          </surpriseAttack>
-        </li>
-        <li>
           <label>head</label>
           <capacities>
             <li>Blunt</li>
@@ -317,7 +299,7 @@
       <defName>CynobunHirsutus</defName>
       <label>Shaggy bun-dog</label>
       <race>CynobunHirsutus</race>
-      <combatPower>100</combatPower>
+      <combatPower>90</combatPower>
       <ecoSystemWeight>1.1</ecoSystemWeight>
       <wildGroupSize>2~6</wildGroupSize>
       <lifeStages>

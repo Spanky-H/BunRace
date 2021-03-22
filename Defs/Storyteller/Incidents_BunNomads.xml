@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>TraderCaravanArrival</defName>
+        <label>trader caravan arrival</label>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_TraderCaravanArrival</workerClass>
+        <category>FactionArrival</category>
+        <baseChance>4</baseChance>
+        <requireColonistsPresent>True</requireColonistsPresent>
+      </IncidentDef>
+      
+      <IncidentDef>
+        <defName>VisitorGroup</defName>
+        <label>visitor group</label>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_VisitorGroup</workerClass>
+        <category>FactionArrival</category>
+        <baseChance>4</baseChance>
+        <pointsScaleable>true</pointsScaleable>
+        <requireColonistsPresent>True</requireColonistsPresent>
+      </IncidentDef>
+    
+      <IncidentDef>
+        <defName>TravelerGroup</defName>
+        <label>traveler group</label>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_TravelerGroup</workerClass>
+        <category>FactionArrival</category>
+        <baseChance>4</baseChance>
+        <pointsScaleable>true</pointsScaleable>
+        <requireColonistsPresent>True</requireColonistsPresent>
+      </IncidentDef>
+</Defs>

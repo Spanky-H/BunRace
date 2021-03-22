@@ -122,7 +122,7 @@
     </weaponTags>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BunTribalBase" Name="Tribal_Hunter">
+  <PawnKindDef ParentName="BunTribalBase" Name="Bun_Tribal_Hunter">
     <defName>Bun_Tribal_Hunter</defName>
     <label>hunter</label>
     <combatPower>65</combatPower>
@@ -137,7 +137,7 @@
     </weaponTags>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="Tribal_Hunter">
+  <PawnKindDef ParentName="Bun_Tribal_Hunter">
     <defName>Bun_Tribal_Trader</defName>
     <label>trader</label>
     <trader>true</trader>
@@ -178,7 +178,6 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BunTribalBase" Name="BunTribalChiefBase" Abstract="True">
-    <defName>Bun_Tribal_ChiefMelee</defName>
     <combatPower>130</combatPower>
     <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
     <minGenerationAge>30</minGenerationAge>
@@ -623,24 +622,6 @@
     <combatEnhancingDrugsChance>0.80</combatEnhancingDrugsChance>
     <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
     <biocodeWeaponChance>0.3</biocodeWeaponChance>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="BunMercenaryEliteTierBase">
-    <defName>BunPirateBoss</defName>
-    <label>boss</label>
-    <labelPlural>bosses</labelPlural>
-    <factionLeader>true</factionLeader>
-    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-    <canBeSapper>true</canBeSapper>
-    <inventoryOptions>
-      <skipChance>0.8</skipChance>
-      <subOptionsChooseOne>
-        <li>
-          <thingDef>Silver</thingDef>
-          <countRange>50~200</countRange>
-        </li>
-      </subOptionsChooseOne>
-    </inventoryOptions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BunMercenaryEliteTierBase" Name="BunMercenaryEliteBase" Abstract="True">
