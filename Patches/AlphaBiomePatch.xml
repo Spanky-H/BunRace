@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+
+        <match Class="PatchOperationSequence">
+            <!-- Patch the cynobun into the Alpha Biomes spawn lists-->
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_PropaneLakes"]/wildAnimals</xpath>
+                    <value>
+                        <CynobunHirsutus>.05</CynobunHirsutus>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_PropaneLakes"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>CynobunHirsutus</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals</xpath>
+                    <value>
+                        <Cynobun>.1</Cynobun>
+                        <CynobunHirsutus>.2</CynobunHirsutus>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_MycoticJungle"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                        <li>CynobunHirsutus</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_OcularForest"]/wildAnimals</xpath>
+                    <value>
+                        <Cynobun>.1</Cynobun>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_OcularForest"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals</xpath>
+                    <value>
+                        <Cynobun>.1</Cynobun>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_TarPits"]/wildAnimals</xpath>
+                    <value>
+                        <Cynobun>.13</Cynobun>
+                        <CynobunHirsutus>.26</CynobunHirsutus>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_TarPits"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                        <li>CynobunHirsutus</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals</xpath>
+                    <value>
+                        <Cynobun>.13</Cynobun>
+                        <CynobunHirsutus>.26</CynobunHirsutus>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                        <li>CynobunHirsutus</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_PyroclasticConflagration"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_MechanoidIntrusion"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AB_RockyCrags"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>Cynobun</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
